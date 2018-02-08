@@ -15,6 +15,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "items")
 public class Inventory {
+	
   
   // Use generated ID
   @Id
@@ -57,6 +58,7 @@ public class Inventory {
     this.img = img;
     this.img_alt = img_alt;
     this.stock = stock;
+    
   }
 
   public long getId() {
