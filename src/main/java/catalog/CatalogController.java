@@ -39,6 +39,7 @@ public class CatalogController {
     ResponseEntity<?> getById(@PathVariable long id) {
     	
          if (!itemsRepo.exists(id)) {
+         	System.out.println("### Not found")
           return ResponseEntity.notFound().build();
       	 }
       	 
