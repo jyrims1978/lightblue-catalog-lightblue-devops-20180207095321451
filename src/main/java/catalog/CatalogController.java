@@ -42,7 +42,7 @@ public class CatalogController {
          	System.out.println("### Not found");
           return ResponseEntity.notFound().build();
       	 }
-      	 System.out.println("### found");
+      	 System.out.println("### found! Fetching row with ID " + id);
          return ResponseEntity.ok(itemsRepo.findOne(id));
     }
 
