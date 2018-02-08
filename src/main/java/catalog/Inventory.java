@@ -9,6 +9,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * Entity: inventorydb.items
+ * fixed
  *
  */
 @Entity
