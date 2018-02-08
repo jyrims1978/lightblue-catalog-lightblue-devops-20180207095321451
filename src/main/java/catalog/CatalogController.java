@@ -42,7 +42,7 @@ public class CatalogController {
          	System.out.println("### Not found");
           return ResponseEntity.notFound().build();
       	 }
-      	 
+      	 System.out.println("### found")
          return ResponseEntity.ok(itemsRepo.findOne(id));
     }
 
